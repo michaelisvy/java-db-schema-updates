@@ -2,12 +2,9 @@ package org.samples.user;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Data @Entity
+@Data @Entity @Table(name="postal_address")
 public class Address {
 
     @Id
