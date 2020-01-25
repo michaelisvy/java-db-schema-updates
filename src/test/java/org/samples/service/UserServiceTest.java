@@ -1,9 +1,8 @@
-package org.samples.repository;
+package org.samples.service;
 
 import org.junit.jupiter.api.Test;
 import org.samples.model.Address;
 import org.samples.model.User;
-import org.samples.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
@@ -12,10 +11,10 @@ import javax.transaction.Transactional;
 import java.time.LocalDate;
 
 @SpringBootTest
-class UserRepositoryTest {
+class UserServiceTest {
 
 	@Autowired
-	private UserRepository userRepository;
+	private UserService userService;
 
 	@Test @Transactional @Rollback(false)
 	void shouldCreateUser() {
@@ -23,6 +22,6 @@ class UserRepositoryTest {
 		User user = new User("Bob", "Smith", dateOfBirth);
 		Address address = new Address("9 Serangoon avenue 2", "556134", "Singapore");
 		user.addAddress(address);
-		this.userRepository.save(user);
+		this.userService.save(user);
 	}
 }

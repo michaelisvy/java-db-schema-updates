@@ -28,6 +28,9 @@ public class User {
         this.dateOfBirth = dateOfBirth;
     }
 
+    public User() {
+    }
+
     public void addAddress(Address address) {
         this.addressList.add(address);
     }
