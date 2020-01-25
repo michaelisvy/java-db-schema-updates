@@ -1,4 +1,4 @@
-package org.samples.user;
+package org.samples.repository;
 
 import org.junit.jupiter.api.Test;
 import org.samples.model.Address;
@@ -12,7 +12,7 @@ import javax.transaction.Transactional;
 import java.time.LocalDate;
 
 @SpringBootTest
-class UserTest {
+class UserRepositoryTest {
 
 	@Autowired
 	private UserRepository userRepository;
