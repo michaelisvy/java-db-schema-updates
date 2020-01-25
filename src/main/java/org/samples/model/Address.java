@@ -1,4 +1,4 @@
-package org.samples.user;
+package org.samples.model;
 
 import lombok.Data;
 

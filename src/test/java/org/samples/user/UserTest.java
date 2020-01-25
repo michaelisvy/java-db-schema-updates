@@ -1,15 +1,17 @@
 package org.samples.user;
 
 import org.junit.jupiter.api.Test;
+import org.samples.model.Address;
+import org.samples.model.User;
+import org.samples.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
-import org.springframework.test.context.ActiveProfiles;
 
 import javax.transaction.Transactional;
 import java.time.LocalDate;
 
-@SpringBootTest @ActiveProfiles("mysql")
+@SpringBootTest
 class UserTest {
 
 	@Autowired

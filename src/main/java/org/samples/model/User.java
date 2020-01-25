@@ -1,4 +1,4 @@
-package org.samples.user;
+package org.samples.model;
 
 import lombok.Data;
 
@@ -16,6 +16,7 @@ public class User {
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
+    private LocalDate subscriptionDate;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name="FK_USER_ID"))
