@@ -1,0 +1,6 @@
+org/samples/web/UserController.class
+org/samples/model/User.class
+org/samples/service/UserService.class
+org/samples/model/Address.class
+org/samples/Application.class
+org/samples/repository/UserRepository.class
