@@ -6,10 +6,12 @@ import org.samples.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
+import org.springframework.test.context.ActiveProfiles;
 
 import javax.transaction.Transactional;
 import java.time.LocalDate;
 
+@ActiveProfiles("test")
 @SpringBootTest
 class UserServiceTest {
 
